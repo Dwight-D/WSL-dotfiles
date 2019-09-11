@@ -3,7 +3,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/maxfor/.oh-my-zsh"
+export ZSH="/home/millions/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -106,7 +106,7 @@ zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' menu select=0
 zstyle ':completion:*' original false
 zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
-zstyle :compinstall filename '/Users/maxfor/.zshrc'
+zstyle :compinstall filename '/home/millions/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -128,4 +128,4 @@ bindkey -v
 #bindkey '^[[A' up-line-or-beginning-search # Up
 #bindkey '^[[B' down-line-or-beginning-search # Down
 
-source $HOME/scripts/work/workfunctions.zsh
+eval $(ssh-agent) && ssh-add
